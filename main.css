@@ -1,0 +1,498 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css?family=Tangerine:700';
+
+:root {
+    --main-background: #f7f7f7;
+    --main-grey: #363839;
+}
+
+body {
+    background-color: var(--main-white);
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    color: #585757;
+}
+
+/* DEFAULTS */
+
+.section-title {
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.video-title {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sub-title {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+
+/* HEADER */
+
+.nav {
+    margin: 0;
+    padding: 10px 0 0 0;
+    background-color: var(--main-grey);
+}
+
+#logo {
+    border: 3px solid var(--main-background);
+    width: 60px;
+    color: white;
+    margin: auto;
+}
+
+#logo a {
+    color: var(--main-background);
+    font-size: 35px;
+    padding: 3px;
+}
+
+#logo a:hover {
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    font-size: 18px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.menu li {
+    padding: 0;
+    border-bottom: 1px solid var(--main-background);
+    display: list-item;
+}
+
+.menu li:nth-child(5) {
+    border-bottom: none;
+}
+
+.menu li a {
+    color: var(--main-background);
+    display: block;
+    padding: 10px 0 10px 0;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    background-color: var(--main-background);
+    color: #363839;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.menu li a:before {
+    display: none;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+    height: 475px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    max-height: 100vh;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+video {
+    position: absolute;
+    top: -99999px;
+    bottom: -99999px;
+    left: -99999px;
+    right: -99999px;
+    margin: auto;
+    padding-left: 170px;
+    min-height: 100%;
+    min-width: 50%;
+    background-color: #fff;
+}
+
+.video {
+    text-align: center;
+    background-color: #fff;
+}
+
+.video-container {
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 200%;
+    left: -50%;
+}
+/* MAIN */
+
+.motto {
+    margin-bottom: 50px;
+}
+
+.content {
+    padding: 50px 0 50px 0;
+    background-color: #fff;
+}
+
+.synopsis img {
+    margin: auto;
+    width: 320px;
+    height: 320px;
+    max-height: 500px;
+    border-radius: 50%;
+}
+
+.testimonial {
+    background: transparent;
+    padding-top: 50px;
+    color: #fff;
+    height: 500px;
+    min-height: 130px;
+}
+
+.testimonial-image {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    position: fixed;
+    z-index: -100;
+    top: 0%;
+    min-width: 2000px;
+    overflow: hidden;
+    zoom: 80%;
+    margin-left: -700px;
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.testimonial-image .section-title {
+    padding-top: 0px;
+    font-size: 80px;
+    font-family: 'Tangerine', 'Raleway', sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-text {
+    position: relative;
+    top: 20%;
+}
+
+.videos {
+    background-color: #f7f7f7;
+    padding: 50px 0 50px 0;
+    margin-top: 370px
+}
+
+.videos_border {
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade_in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.7s;
+    -moz-animation-duration:0.7s;
+    animation-duration:0.7s;
+}
+
+.form-area {
+    margin: auto;
+    margin-bottom: 125px;
+    max-width: 750px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #363839;
+}
+
+.btn:hover {
+    background-color: #696969;
+}
+
+footer {
+    background-color: #363839;
+    border-top: 5px solid #696969;
+    color: #fff;
+    text-align: justify;
+    padding: 25px 0 0 0;
+}
+
+.social-buttons {
+    text-align: center;
+}
+
+.social-buttons ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.social-buttons li {
+    float: left;
+    margin: 0px 6px 0px 0px;
+}
+
+.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+}
+
+#email {
+    font-size: 12px;
+}
+
+.footer-extended {
+    background-color: #212223;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 14px;
+    border-top: 1px solid #696969;
+    margin-top: 50px;
+}
+
+.faq-main {
+    padding: 0 50px 50px 50px;
+}
+
+.text-title {
+    margin: 0;
+    font-weight: bold;
+}
+
+.answer {
+    margin-bottom: 30px;
+}
+
+.about_main {
+    padding: 0 50px 50px 50px;
+}
+
+.packages-main {
+    padding: 0 50px 50px 50px;
+}
+
+.video-info {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.video-info p {
+    font-style: italic;
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+    .videos {
+        margin-top: 0;
+    }
+
+}
+
+/* XS, Phones */
+@media only screen and (min-width: 480px) {
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .motto .section-title {
+        text-align: left;
+    }
+
+    .testimonial-image .section-title {
+        margin-top: 130px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .motto {
+        margin-left: 0;
+    }
+
+    #email {
+        font-size: 18px;
+    }
+
+}
+
+/* SM, Tablets */
+@media only screen and (min-width: 768px) {
+
+
+    .nav {
+        height: 85px;
+    }
+
+    #logo {
+        margin: 10px 0 10px 0;
+    }
+
+    .active {
+        border-bottom: 2px solid var(--main-background);
+    }
+
+    .menu {
+        float: right;
+        margin: 0;
+    }
+
+    .menu li {
+        padding: 20px 10px 0px 0px;
+        float: left;
+        border-bottom: none;
+        list-style: none;
+    }
+
+    .menu li a:hover {
+        text-decoration: none;
+        background-color: transparent;
+        color: var(--main-background);
+    }
+
+    .menu li a {
+        position: relative;
+        text-decoration: none;
+        display: initial;
+        padding: 5px 0px 5px 0px;
+    }
+
+    .menu li a:before {
+        display: initial;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0px;
+        background-color: var(--main-background);
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .menu li a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+    video {
+        padding: 0;
+    }
+
+    .testimonial {
+        height: 400px;
+    }
+
+    .testimonial-image .section-title {
+        margin-top: 100px;
+    }
+
+    .testimonial-image img {
+        margin-left: -490px;
+    }
+
+}
+
+/* MD, Desktops */
+@media only screen and (min-width: 992px) {
+
+    .synopsis img {
+        margin: initial;
+    }
+
+    .testimonial-image img {
+        zoom: 75%;
+        margin-left: -400px;
+    }
+
+    .menu li {
+        padding: 20px 10px 0 10px;
+    }
+
+}
+
+/* LG, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+    .videos_border {
+        border: none;
+    }
+
+    .testimonial-image img {
+        zoom: 95%;
+        margin: 0;
+    }
+
+    .testimonial-image{
+        margin-top: 180px;
+    }
+
+    .video-wrapper{
+        width: 555px;
+        margin: auto;
+    }
+
+    .video-title {
+        font-size: 36px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
+
+@media only screen and (min-width: 2000px) {
+    .testimonial-image img {
+        width: 100%;
+    }
+
+}
